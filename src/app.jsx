@@ -14,6 +14,7 @@ function App(props) {
     <section>
       <ChoreForm addChoreLog={addChoreLog} />
       <br/>
+      <h2> Chore List:</h2>
       <ChoreChart chores={choreLogs}/>
     </section>
   );

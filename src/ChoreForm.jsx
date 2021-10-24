@@ -7,9 +7,9 @@ import React, { useState, useEffect } from "react";
 import "./styles/styles.css";
 
 function ChoreForm({ addChoreLog }) {
-  const [choreDesc, setChoreDesc] = useState();
-  const [name, setName] = useState();
-  const [date, setDate] = useState();
+  const [choreDesc, setChoreDesc] = useState("");
+  const [name, setName] = useState("");
+  const [date, setDate] = useState("");
 
   const handleSubmit = e => {
     e.preventDefault();
