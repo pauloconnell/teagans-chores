@@ -1,0 +1,74 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3;
+  font-weight: 100;
+  background-color:lightgrey;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+img {
+  border: 1px solid lightgrey;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin-left:20px;
+  width:
+}
+
+li {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+input {
+  width:100%;
+  line-height:1.9;
+}
+
+.app {
+  background-color:white;
+  max-width:85%;
+  margin:auto;
+}
+.indent {
+  text-indent: 18px;
+}
+
+.name {
+  text-transform: uppercase;
+  position: relative;
+  top: -20px;
+  font-weight: 600;
+  font-size: 1.7em;
+  font-stretch: ultra-expanded;
+  line-height: 1.5;
+  margin-bottom: -13px;
+}
+
