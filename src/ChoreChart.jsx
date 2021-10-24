@@ -1,24 +1,29 @@
 import React from 'react'
 
 function ChoreChart(props) {
+  console.log('recieved props of ', props.chores, props.chores[0]);
   return (
     
     <div>
  
          
        
-        
+       
         <ul>
             {props.chores.map((chore, index) => {
-       
+      return(
+     
           <li key={index}>
-             <h2>Chore description</h2>    {chore[0]} <br/>
-              <h2>Name</h2> {chore[1]}<br/>
-             <h2>Date</h2>    {chore[2]}<br/>
+                   
+             Chore description:    {chore[0]} <br/>
+              Name: {chore[1]}<br/>
+             Date:    {chore[2]}<br/>
             </li>
-         
+     )
     })};
       </ul>
+      
+      
     </div>
   );
 }
