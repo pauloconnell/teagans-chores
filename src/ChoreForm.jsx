@@ -14,6 +14,9 @@ function ChoreForm({ addChoreLog }) {
   const handleSubmit = e => {
     e.preventDefault();
     addChoreLog([choreDesc, name, date]);
+    setName("");
+    setDate("");
+    setChoreDesc("");
   };
 
   return (
